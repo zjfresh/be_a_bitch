@@ -13,7 +13,7 @@ public class Main extends JPanel {
         init();
     }
 
-    void init() {
+    private void init() {
         this.setBackground(new Color(174, 211,226));
         this.setFocusable(true);
         this.setRequestFocusEnabled(true);
@@ -32,13 +32,13 @@ public class Main extends JPanel {
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.ORANGE);
+        g2.setColor(Color.LIGHT_GRAY);
         g2.fill(Data.BOOM);
         fillPoints(g2);
     }
 
     private void fillPoints(Graphics2D g2) {
         g2.setColor(Color.BLACK);
-        Data.points.forEach(e-> g2.fill(e));
+        Data.points.forEach(g2::fill);
     }
 }
