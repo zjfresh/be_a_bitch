@@ -7,3 +7,5 @@ move your mouse to hide the black points
 
 if you crash the black points,then game over
 ![image](https://github.com/yanghaoMine4ever/be_a_guy/raw/master/2.png)
+
+# wtf mother fuck
